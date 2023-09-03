@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portopolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all,min.css">
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            font-family: 'PT Serif', serif;
+            color: black;
+        }
+        header{
+            height:70px;
+        }
+        header h1 {
+            display: inline-block;
+            padding: 16px 24px;
+            text-transform: uppercase;
+        }
+        header h1 a {
+            transition:.3s;
+        }
+        header h1 a:hover {
+            color: #f84744;
+        }
+        header ul{
+            float: right;
+        }
+        header ul li{
+            padding: 24px;
+            display: inline-block;
+        }
+        header ul li a{
+            transition: .3s;
+        }
+        header ul li a:hover {
+            color: #f84744;
+        }
+        a{
+            text-decoration: none;
+        }
+        .container{
+            width: 90%;
+            margin: 0 auto;
+        }
+        .container ::after{
+            content: '';
+            display: block;
+            clear: both;
+        }
+        .banner{
+            background-color: blue;
+            padding: 150px;
+        }
+        section{
+            padding: 50px 0;
+        }
+        .banner img{
+            width: 350px;
+            border-radius: 10px;
+            box-shadow: 0 3px 5px #ddd;
+            margin-bottom: 10px;
+        }
+        .banner h2,.banner p{
+            color: white;
+        }
+        .banner h2{
+            margin-bottom: 10px;
+        }
+        .banner p {
+            font-size: 18px;
+        }
+        .banner-left{
+            padding-left: 24px;
+        }
+        section h3 {
+            padding-bottom: 20px;
+            text-align: center;
+            margin: 20px;
+            position: relative;
+        }
+        section h3::before{
+            content: '';
+            display: block;
+            position: absolute;
+            bottom: 0;
+            width: 120px;
+            height: 1px;
+            background-color: white;
+            left: calc(50% - 60px);
+        }
+        section h3::after{
+            content: '';
+            display: block;
+            position: absolute;
+            bottom: -1px;
+            width: 40px;
+            height: 4px;
+            background-color: red;
+            left: calc(50% - 20px);
+        }
+        #about p{
+            text-align: justify;
+            text-indent: 30px;
+            line-height: 25px;
+            margin-bottom: 12px;
+        }
+        #skill , #kontak{
+            background-color: #f9f9f9;
+        }
+        #skill .bar{
+            height: 30px;
+            background-color: white;
+            border: 1px solid #ddd;
+            margin: 5px 0 20px 0;
+           
+        }
+        .bar .nilai{
+            height: 30px;
+            background-color: red;
+            display: inline-block;
+            text-align: center;
+        }
+        .html{
+            width: 100%;
+        }
+        .css{
+            width: 80%;
+        }
+        .js{
+            width: 85%;
+        }
+        .PHP{
+            width: 90%;
+        }
+        .PH{
+            width: 79%;
+        }
+        .col-4{
+            width: 25%;
+            box-sizing: border-box;
+            padding: 5px;
+            float: left;
+            text-align: center;
+        }
+        .col-4 img {
+            width: 50%;
+        }
+        .col-4 a:hover img{
+            transform: scale(1,2);
+        } 
+        .col-3{
+            width: 32.33%;
+            box-sizing: border-box;
+            float: left;
+            text-align: center;
+            padding: 50px 10px;
+        }
+        .col-3 h4{
+            padding-bottom: 10px;
+            border-bottom: 1px solid #ddd;
+            margin-bottom: 15px;
+        }
+        footer {
+           background-color: #333;
+           padding: 50px;
+           text-align: center;
+        }
+        footer small {
+            color: #fff;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1><a href="">M.HARIANTO</a> </h1>
+            <ul>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Skill">Skill</a></li>
+                <li><a href="#portopolio">Portopolio</a></li>
+                <li><a href="#kontak">Kontak</a></li>
+            </ul>
+           
+        </div>
+    </header> 
+    <section class="banner">
+        <div class="container">
+            <div class="banner-left">
+            <img src="img/IMG20210605173713 (1).png">
+            <h2> Hai...... <br>
+            saya adalah seorang Programer</h2>
+            <p>selamat datang di website portopolio saya</p>
+        </div>
+        </div>
+    </section>
+
+    <section id="About">
+        <div class="container">
+            <h3>About</h3>
+            <p>saya adalah manusia biasa yang bercita-cita menjadi seorang prgramer yang handal, ketika kita ingin menjadi seorang programer yang handal kita juga harus berani mengeluarkan effprt yang lebih karna saya tau semua yang ada didunia ini tidak ada yang instan mie instan aj walaupun ada tulisan instanya masih memerlukan proses untuk memasaknya, dan saya yakin bahwa semua proses tidak akan pernah mengkhianati hasil</p>
+            <p>kenapa saya ingin menjadi programer karna saya menyukai hal-hal baru dalam hidup saya dan dengan hal baru tersebut saya bisa mengupgrade diri saya menjadi manusia memahami suatu ilmu pemrograman dan saya merasa sangat bangga jika saya berhasil memahami ilmu ini</p>
+        </div>
+    </section>
+
+    <section id="skill">
+        <div class="container">
+            <h3>Skills</h3>
+            <h4>HTML</h4>
+            <div class="bar">
+                <span class="nilai html">100%</span>
+            </div>
+            <h4>css</h4>
+            <div class="bar">
+                <span class="nilai css">80%</span>
+            </div>
+            <h4>javascript</h4>
+            <div class="bar">
+                <span class="nilai js">85%</span>
+            </div>
+            <h4>PHP</h4>
+            <div class="bar">
+                <span class="nilai PHP">90%</span>
+            </div>
+            <h4>PHOTOSHOP</h4>
+            <div class="bar">
+                <span class="nilai PH">79%</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="portopolio">
+        <div class="container"></div>
+        <h3>Portopolio</h3>
+        <div class="col-4">
+            <a href="">
+                <img src="img/no.jpeg">
+            </a>
+        </div>
+        <div class="col-4">
+            <a href="">
+                <img src="img/yes.png">
+            </a>
+        </div>
+        <div class="col-4">
+            <a href="">
+                <img src="img/you.jpeg">
+            </a>
+        </div>
+        <div class="col-4">
+            <a href="">
+                <img src="img/no.jpeg">
+            </a>
+        </div>
+    </section>
+
+    <section id="kontak">
+        <div class="container">
+            <h3>kontak</h3>
+            <div class="col-3">
+                <h4>Alamat</h4>
+                <p>jl. Lintas laskar 45 danger, Masbagik, lombok timur</p>
+            </div>
+        </div>
+        <div class="col-3">
+            <h4>Email</h4>
+            <p>mharianto061@gmail.com</p>
+        </div>
+        <div class="col-3">
+            <h4>Telp/Hp</h4>
+            <p>+62 859 1712 55386</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <small>copyright &copy; 2020 - M.HARIANTO.</small>
+        </div>
+    </footer>
+</body>
+</html>
